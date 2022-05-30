@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import Button from '@mui/material/Button';
+
 
 export default class Testform extends Component {
     constructor(props) {
@@ -29,11 +32,26 @@ export default class Testform extends Component {
         
 
   render() {
+      
     return (
         <div>
+            <h1 className='hello'>Hello World</h1>
+            <Button variant="outlined" color="error">
+  Error
+</Button>
+
+
+
         <form onSubmit={this.handleSubmit}>
             <input value={this.state.input} onChange={this.handleChange}/>                        
-            <button type="submit">Submit</button>
+            <button type="submit" style={{
+                borderRadius: '10px',
+                color: "green",
+                padding: '10px',
+                webkitTransition: '175ms ease-in-out',
+                transition: '175ms ease-in-out'
+            }}            
+            >Submit</button>
         </form>  
 
         <ul>

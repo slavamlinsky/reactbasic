@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import './stylesNew.css';
 
 import Ccomponent from './Ccomponent';
-import Testform from './Testform';
+// import Testform from './Testform';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         
       <Ccomponent/>
 
-      <Testform/>  
+      {/* <Testform/>   */}
 
         
         
